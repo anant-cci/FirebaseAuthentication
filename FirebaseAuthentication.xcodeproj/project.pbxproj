@@ -18,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		1644F4F220107AA4002E61BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		169C8BA320109D8D001FE267 /* FirebaseAuthentication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseAuthentication.entitlements; sourceTree = "<group>"; };
 		16B1FC9A20105B3300E9CEA1 /* FirebaseAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B1FC9D20105B3300E9CEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B1FC9F20105B3300E9CEA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		16B1FC9C20105B3300E9CEA1 /* FirebaseAuthentication */ = {
 			isa = PBXGroup;
 			children = (
+				169C8BA320109D8D001FE267 /* FirebaseAuthentication.entitlements */,
 				16B1FC9D20105B3300E9CEA1 /* AppDelegate.swift */,
 				16B1FC9F20105B3300E9CEA1 /* ViewController.swift */,
 				16B1FCA120105B3300E9CEA1 /* Main.storyboard */,
@@ -127,6 +129,11 @@
 					16B1FC9920105B3300E9CEA1 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -354,6 +361,7 @@
 			baseConfigurationReference = 19C56A659CFD2BC9FFA437AF /* Pods-FirebaseAuthentication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseAuthentication/FirebaseAuthentication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DV85RL7V3;
 				INFOPLIST_FILE = FirebaseAuthentication/Info.plist;
@@ -370,6 +378,7 @@
 			baseConfigurationReference = 80FA89DCA683D121E73E109E /* Pods-FirebaseAuthentication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseAuthentication/FirebaseAuthentication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DV85RL7V3;
 				INFOPLIST_FILE = FirebaseAuthentication/Info.plist;

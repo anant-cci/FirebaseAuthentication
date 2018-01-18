@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuthUI
 import FirebaseGoogleAuthUI
+import FirebaseFacebookAuthUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
@@ -26,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
         
         let providers: [FUIAuthProvider] = [
             FUIGoogleAuth(),
+            FUIFacebookAuth(),
             ]
         authUI?.providers = providers
         
