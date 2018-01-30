@@ -10,5 +10,6 @@ target 'FirebaseAuthentication' do
 pod 'FirebaseUI/Auth'
 pod 'FirebaseUI/Google'
 pod 'FirebaseUI/Facebook'
+pod 'FirebaseUI/Twitter'
 
 end

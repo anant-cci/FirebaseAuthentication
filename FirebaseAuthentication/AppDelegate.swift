@@ -11,6 +11,8 @@ import Firebase
 import FirebaseAuthUI
 import FirebaseGoogleAuthUI
 import FirebaseFacebookAuthUI
+import FirebaseTwitterAuthUI
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
@@ -25,9 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
         // You need to adopt a FUIAuthDelegate protocol to receive callback
         authUI?.delegate = self
         
+        Twitter.sharedInstance().start(withConsumerKey:"qVaGBVLluWUp1wbG6nPlIgykI", consumerSecret:"fHuWCSKYgU5Umh5LgzeAaWgrvCILHimaFkLhwhzIGxNprqVej7")
+        
         let providers: [FUIAuthProvider] = [
             FUIGoogleAuth(),
             FUIFacebookAuth(),
+            FUITwitterAuth(),
             ]
         authUI?.providers = providers
         

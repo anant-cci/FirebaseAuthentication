@@ -35,6 +35,9 @@ PODS:
   - FirebaseUI/Google (4.5.0):
     - FirebaseUI/Auth
     - GoogleSignIn (~> 4.0)
+  - FirebaseUI/Twitter (4.5.0):
+    - FirebaseUI/Auth
+    - TwitterKit (~> 3.0)
   - GoogleSignIn (4.1.1):
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
@@ -62,11 +65,15 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - TwitterCore (3.0.2)
+  - TwitterKit (3.2.1):
+    - TwitterCore (>= 3.0.2)
 
 DEPENDENCIES:
   - FirebaseUI/Auth
   - FirebaseUI/Facebook
   - FirebaseUI/Google
+  - FirebaseUI/Twitter
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -83,7 +90,9 @@ SPEC CHECKSUMS:
   GTMOAuth2: be83fd28d63ae3087e7d351b1f39c1a7e24ab6e7
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  TwitterCore: e0420b01e02e7d20e94690e37f43e75de219ab8d
+  TwitterKit: 205ac89824bbfe9e85a16c420d30bb7bcbedac45
 
-PODFILE CHECKSUM: d2f9b0dd709a100361f32bff0fd823acaa3c36d4
+PODFILE CHECKSUM: 27ddc2a6cff423840f6ea92db5a045081ccb311d
 
 COCOAPODS: 1.1.1
